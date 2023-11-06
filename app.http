@@ -1,0 +1,34 @@
+GET http://localhost:4447/
+
+###
+GET http://localhost:4447/auth/
+
+###
+GET http://localhost:4447/api
+
+###
+POST http://localhost:4447/auth/signup/
+Content-Type: application/json
+
+{
+  
+  "name":"chitikila",
+  "email":"chitikila@gmail.com",
+  "phoneNumber":"7702682632",
+  "gender":"female",
+  "password":"meena"
+  
+}
+
+###
+POST http://localhost:4447/auth/login
+Content-Type: application/json
+
+{
+     "email":"chitikila@gamil.com",
+     "password":"meena"
+}
+
+###
+GET  http://localhost:4447/auth/user-profile/
+
